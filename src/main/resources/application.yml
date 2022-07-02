@@ -1,0 +1,126 @@
+spring:
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+config:
+  cities:
+    -
+      name: Gothenburg
+      durationTime: 60
+      maxAmount: 60
+      rules:
+        -
+          starttime: "06:00"
+          endtime: "06:29"
+          amount: 8
+        -
+          starttime: "06:30"
+          endtime: "06:59"
+          amount: 13
+        -
+          starttime: "07:00"
+          endtime: "07:59"
+          amount: 18
+        -
+          starttime: "08:00"
+          endtime: "08:29"
+          amount: 13
+        -
+          starttime: "08:30"
+          endtime: "14:59"
+          amount: 8
+        -
+          starttime: "15:00"
+          endtime: "15:29"
+          amount: 13
+        -
+          starttime: "15:30"
+          endtime: "16:59"
+          amount: 18
+        -
+          starttime: "17:00"
+          endtime: "17:59"
+          amount: 13
+        -
+          starttime: "18:00"
+          endtime: "18:29"
+          amount: 8
+        -
+          starttime: "18:30"
+          endtime: "05:59"
+          amount: 0
+
+      taxExemptVehicles:
+        -
+          Motorcycles
+        -
+          Busses
+        -
+          Emergency
+        -
+          Diplomat
+        -
+          Military
+        -
+          Foreign
+
+    -
+      name: Stockholm
+      maxAmount: 120
+      durationTime: 90
+      rules:
+        -
+          starttime: "06:00"
+          endtime: "06:29"
+          amount: 8
+        -
+          starttime: "06:30"
+          endtime: "06:59"
+          amount: 13
+        -
+          starttime: "07:00"
+          endtime: "07:59"
+          amount: 18
+        -
+          starttime: "08:00"
+          endtime: "08:29"
+          amount: 13
+        -
+          starttime: "08:30"
+          endtime: "14:59"
+          amount: 8
+        -
+          starttime: "15:00"
+          endtime: "15:29"
+          amount: 13
+        -
+          starttime: "15:30"
+          endtime: "16:59"
+          amount: 18
+        -
+          starttime: "17:00"
+          endtime: "17:59"
+          amount: 21
+        -
+          starttime: "18:00"
+          endtime: "18:29"
+          amount: 8
+        -
+          starttime: "18:30"
+          endtime: "05:59"
+          amount: 0
+
+      taxExemptVehicles:
+        -
+          Motorcycles
+        -
+          Busses
+        -
+          Emergency
+        -
+          Diplomat
+        -
+          Military
+        -
+          Foreign
